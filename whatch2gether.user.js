@@ -12,16 +12,17 @@
 // ==/UserScript==
 
 (function() {
-    $(".player-volume")[0].parentElement.className = ""
-    $(".player-volume")[0].children[0].children[0].style.transform = "none"
-    $(".player-volume")[0].children[0].children[0].style.height = "10px"
-    $(".player-volume")[0].children[0].style.width = "150px"
-    $(".player-volume")[0].children[0].style.height = "10px"
+    $(".player-volume")[0].parentElement.className = "";
+    $(".player-volume")[0].children[0].children[0].style.transform = "none";
+    $(".player-volume")[0].children[0].children[0].style.height = "10px";
+    $(".player-volume")[0].children[0].style.width = "150px";
+    $(".player-volume")[0].children[0].style.height = "10px";
     $(".player-volume")[0].children[0].style.marginTop = "2px";
-    $(".player-volume")[0].style.backgroundColor = "transparent"
+    $(".player-volume")[0].style.backgroundColor = "transparent";
 
     $("#player-settings-section").append($("div[title='Vollbild aktivieren']"));
+    $("div[title='Vollbild aktivieren']")[0].className= "item";
     $("div[title='Vollbild aktivieren']")[0].style.color = "rgba(255,255,255,0.9)";
-    $("div[title='Vollbild aktivieren']")[0].style.marginTop = "3px";
-    $("div[title='Vollbild aktivieren']")[0].style.backgroundColor = "transparent"
+    $("div[title='Vollbild aktivieren']")[0].style.marginTop = "1px";
+    $("div[title='Vollbild aktivieren']")[0].style.backgroundColor = "transparent";
 })();
