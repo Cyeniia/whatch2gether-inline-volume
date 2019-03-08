@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Whatch2Gether inline volume
 // @description  Brings the volume bar into the player settings.
-// @version      1.1
+// @version      1.1.1
 // @author       xPumaa
 // @license      GPL-3.0; http://www.gnu.org/licenses/gpl-3.0.txt
 // @namespace    https://github.com/xPumaa/whatch2gether-inline-volume
