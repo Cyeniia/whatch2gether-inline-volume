@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Whatch2Gether inline volume
 // @description  Brings the volume bar into the player settings.
-// @version      1.1.4
+// @version      1.1.5
 // @author       xPumaa
 // @license      GPL-3.0; http://www.gnu.org/licenses/gpl-3.0.txt
 // @namespace    https://github.com/xPumaa/whatch2gether-inline-volume
@@ -12,6 +12,13 @@
 // ==/UserScript==
 
 (function() {
+    var volMute = null;
+    $('#volume_button').click(function() {
+        if (volMute === null) { volMute = W2gNPA.player.volume; W2gNPA.player.volume = 0; $("#volume_slider")[0].value = W2gNPA.player.volume; }
+        else { $("#volume_slider")[0].value = volMute * 100; W2gNPA.player.volume = volMute; volMute = null; }
+    });
+
+    $("#player_controls").append($("#volume_slider")[0].parentElement.parentElement);
     $("#volume_slider")[0].style.transform = "none";
     $("#volume_slider")[0].parentElement.parentElement.className = "";
     $("#volume_slider")[0].parentElement.style.width = "150px";
