@@ -7,23 +7,19 @@
 // @namespace    https://github.com/xPumaa/whatch2gether-inline-volume
 // @updateURL    https://github.com/xPumaa/whatch2gether-inline-volume/raw/master/whatch2gether.user.js
 // @icon         https://www.w2g.tv/static/w2g.ico
-// @match        http*://www.w2g.tv/rooms/*
-// @match        http*://w2g.tv/rooms/*
-// @require      https://code.jquery.com/jquery-3.3.1.min.js
+// @match        http*://w2g.tv/static/apps/player/npaplayer/*
+// @require      http://code.jquery.com/jquery-3.3.1.min.js
 // ==/UserScript==
 
 (function() {
-    $(".player-volume")[0].parentElement.className = "";
-    $(".player-volume")[0].children[0].children[0].style.transform = "none";
-    $(".player-volume")[0].children[0].children[0].style.height = "10px";
-    $(".player-volume")[0].children[0].style.width = "150px";
-    $(".player-volume")[0].children[0].style.height = "10px";
-    $(".player-volume")[0].children[0].style.marginTop = "2px";
-    $(".player-volume")[0].style.backgroundColor = "transparent";
+    $("#volume_slider")[0].style.transform = "none";
+    $("#volume_slider")[0].parentElement.parentElement.className = "";
+    $("#volume_slider")[0].parentElement.style.width = "150px";
+    $("#volume_slider")[0].parentElement.style.height = "20px";
 
-    $("#player-settings-section").append($("div[title='Vollbild aktivieren']"));
-    $("div[title='Vollbild aktivieren']")[0].className= "item";
-    $("div[title='Vollbild aktivieren']")[0].style.color = "rgba(255,255,255,0.9)";
-    $("div[title='Vollbild aktivieren']")[0].style.marginTop = "1px";
-    $("div[title='Vollbild aktivieren']")[0].style.backgroundColor = "transparent";
+    $("#player_controls").append($("div[title='Toggle Fullscreen']"));
+    $("div[title='Toggle Fullscreen']")[0].className= "item";
+    $("div[title='Toggle Fullscreen']")[0].style.color = "rgba(255,255,255,0.9)";
+    $("div[title='Toggle Fullscreen']")[0].style.marginTop = "1px";
+    $("div[title='Toggle Fullscreen']")[0].style.backgroundColor = "transparent";
 })();
