@@ -8,6 +8,7 @@
 // @icon         https://www.w2g.tv/static/w2g.ico
 // @match        http*://player.w2g.tv/w2g_player/*
 // @updateURL    https://github.com/xPumaa/whatch2gether-inline-volume/raw/master/whatch2gether.user.js
+// @downloadURL  https://github.com/xPumaa/whatch2gether-inline-volume/raw/master/whatch2gether.user.js
 // @require      http://code.jquery.com/jquery-3.3.1.min.js
 // ==/UserScript==
 
