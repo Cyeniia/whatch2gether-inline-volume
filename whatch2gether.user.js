@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         Whatch2Gether inline volume
 // @description  Brings the volume bar into the player settings.
-// @version      1.1.7
-// @author       xPumaa
+// @version      1.1.8
+// @author       Cyenia
 // @license      GPL-3.0; http://www.gnu.org/licenses/gpl-3.0.txt
-// @namespace    https://github.com/xPumaa/whatch2gether-inline-volume
+// @namespace    https://github.com/Cyeniia/whatch2gether-inline-volume
 // @icon         https://www.w2g.tv/static/w2g.ico
 // @match        http*://player.w2g.tv/w2g_player/*
-// @updateURL    https://github.com/xPumaa/whatch2gether-inline-volume/raw/master/whatch2gether.user.js
-// @downloadURL  https://github.com/xPumaa/whatch2gether-inline-volume/raw/master/whatch2gether.user.js
+// @updateURL    https://github.com/Cyeniia/whatch2gether-inline-volume/raw/master/whatch2gether.user.js
+// @downloadURL  https://github.com/Cyeniia/whatch2gether-inline-volume/raw/master/whatch2gether.user.js
 // @require      http://code.jquery.com/jquery-3.3.1.min.js
 // ==/UserScript==
 
